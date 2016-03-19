@@ -84,7 +84,7 @@ class EventthreeType extends AbstractType {
     }
 
     public function getDefaultOptions(array $options) {
-        return array('csrf_protection' => true);
+        return array('csrf_protection' => FALSE);
     }
 
     public function getName() {

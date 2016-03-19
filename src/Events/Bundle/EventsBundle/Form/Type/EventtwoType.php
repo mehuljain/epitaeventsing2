@@ -67,7 +67,7 @@ class EventtwoType extends AbstractType {
        //Eventtype5
         $builder->add('eventtype5','choice',array(
             'choices' => array('20' => 'Mobilité Internationale Contextes Interculturels 2', 
-                               '21' => 'L’interculturalité sans risques 2',
+                               '21' => 'Linterculturalite sans risques 2',
                                '34'=> 'None of the above'),
             'expanded' => true,
             'multiple' => false,
@@ -105,7 +105,7 @@ class EventtwoType extends AbstractType {
     }
 
     public function getDefaultOptions(array $options) {
-        return array('csrf_protection' => true);
+        return array('csrf_protection' => false);
     }
 
     public function getName() {
