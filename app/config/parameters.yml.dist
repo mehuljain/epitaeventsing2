@@ -1,10 +1,10 @@
 parameters:
     database_driver:   pdo_mysql
-    database_host:     127.0.0.1
-    database_port:     ~
-    database_name:     symfony
-    database_user:     root
-    database_password: ~
+    database_host:     epitaeventsing2.mysql.eu2.frbit.com
+    database_port:     3306
+    database_name:     epitaeventsing2
+    database_user:     epitaeventsing2
+    database_password: Le.fPnkIXtTOt3zeZ-TA+GwT
 
     mailer_transport:  smtp
     mailer_host:       127.0.0.1
