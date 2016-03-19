@@ -54,9 +54,9 @@ class EventtwoType extends AbstractType {
        }
        //Eventtype4
         $builder->add('eventtype4','choice',array(
-            'choices' => array('17' => 'Mobilité Internationale Contextes Interculturels 1', 
-                               '18' => 'L’interculturalité sans risques 1',
-                               '19' => 'Travailler à Hong Kong',        
+            'choices' => array('17' => 'Mobilité Internationale Contextes Interculturels 1(9:30am -11am)', 
+                               '18' => 'L’interculturalité sans risques 1(9:30am -11am)',
+                               '19' => 'Travailler à Hong Kong(10am -11:30am)',        
                                '34' => 'None of the above'),                
             'expanded' => true,
             'multiple' => false,
@@ -78,8 +78,8 @@ class EventtwoType extends AbstractType {
         
        //Eventtype6
         $builder->add('eventtype6','choice',array(
-            'choices' => array('22' => 'Find an internship in Asia/States of the Gulf/Oceania 1', 
-                               '23' => 'Dual degrees: a real asset ? 1',
+            'choices' => array('22' => 'Find an internship in Asia/States of the Gulf/Oceania 1(2pm -3:30pm)', 
+                               '23' => 'Dual degrees: a real asset ? 1(2pm -3pm)',
                                '34' => 'None of the above'
                 ),
             'expanded' => true,
@@ -91,8 +91,8 @@ class EventtwoType extends AbstractType {
         
        //Eventtype7
         $builder->add('eventtype7','choice',array(
-            'choices' => array('24' => 'Find an internship in Asia/States of the Gulf/Oceania 2', 
-                               '25' => 'Dual degrees: a real asset ? 2',
+            'choices' => array('24' => 'Find an internship in Asia/States of the Gulf/Oceania 2(3:30pm -5pm)', 
+                               '25' => 'Dual degrees: a real asset ? 2(3pm -4pm)',
                                '34' => 'None of the above'
                                ),
             'expanded' => true,
