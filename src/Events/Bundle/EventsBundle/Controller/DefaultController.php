@@ -14,6 +14,7 @@ use Events\Bundle\EventsBundle\Form\Type\EventtwoType;
 use Events\Bundle\EventsBundle\Form\Type\EventthreeType;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\RedirectResponse;
+use Symfony\Component\Filesystem\Filesystem;
 
 class DefaultController extends Controller {
 
@@ -24,6 +25,8 @@ class DefaultController extends Controller {
     public function indexAction() {
 
 //        return new RedirectResponse($this->generateUrl('closepage'));
+        $fs = new Filesystem();
+$fs->remove($this->container->getParameter('kernel.cache_dir'));
 
         if ($this->get('security.context')->isGranted('ROLE_USER')) {
             return $this->redirect($this->generateUrl('securedhome'));
