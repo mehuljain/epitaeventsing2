@@ -58,7 +58,7 @@ class UserType extends AbstractType {
     }
 
     public function getDefaultOptions(array $options) {
-        return array('csrf_protection' => FALSE);
+        return array('csrf_protection' => TRUE);
     }
 
     public function getName() {
