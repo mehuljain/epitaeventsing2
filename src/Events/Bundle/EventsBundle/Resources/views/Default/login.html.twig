@@ -10,7 +10,7 @@
         <div class="flash-error"><b style="color: red">{{ error|trans }}</b></div>
 {% endif %}
     <form action="{{ path("fos_user_security_check") }}" method="post">
-    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />    
+   {# <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />    #}
        `<br>
        <b>Login id(Email address or EPITA login)</b> : <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" />
         <br>       
