@@ -4,25 +4,5 @@ events_events:
     prefix:   /
 
 # app/config/routing.yml
-#fos_user_security:
-#    resource: "@FOSUserBundle/Resources/config/routing/security.xml"
-fos_user_security_login:
-  path: /login
-  defaults:  { _controller: EventsEventBundle:Security:login }
-  methods:  [GET]
-  options:
-    expose: true
-
-fos_user_security_check:
-  path: /login_check
-  defaults:  { _controller: FOSUserBundle:Security:check }
-  methods:  [POST]
-  options:
-    expose: true
-
-fos_user_security_logout:
-  path: /logout
-  defaults:  { _controller: FOSUserBundle:Security:logout }
-  methods:  [GET]
-  options:
-    expose: true
+fos_user_security:
+    resource: "@FOSUserBundle/Resources/config/routing/security.xml"
