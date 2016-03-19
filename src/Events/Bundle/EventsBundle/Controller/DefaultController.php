@@ -25,8 +25,8 @@ class DefaultController extends Controller {
     public function indexAction() {
 
 //        return new RedirectResponse($this->generateUrl('closepage'));
-        $fs = new Filesystem();
-$fs->remove($this->container->getParameter('kernel.cache_dir'));
+//        $fs = new Filesystem();
+//$fs->remove($this->container->getParameter('kernel.cache_dir'));
 
         if ($this->get('security.context')->isGranted('ROLE_USER')) {
             return $this->redirect($this->generateUrl('securedhome'));
