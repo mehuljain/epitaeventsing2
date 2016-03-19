@@ -574,7 +574,7 @@ class DefaultController extends Controller {
             $qb0 = $em->createQueryBuilder();
             $qb0->select('count(subscribed.id)');
             $qb0->from('EventsEventsBundle:Subscribed', 'subscribed');
-            $qb0->where('subscribed.eventtype4 = :bar');
+            $qb0->where('subscribed.eventtype8 = :bar');
             $qb0->setParameter('bar', $subscribed->getEventtype8());
 
             $total0 = $qb0->getQuery()->getSingleScalarResult();
@@ -646,15 +646,15 @@ class DefaultController extends Controller {
 
             if (empty($sub)) {
                 $subscribed->setUser($user);
-                $subscribed->setEventtype4($eventtype8);
-                $subscribed->setEventtype5($eventtype9);
-                $subscribed->setEventtype6($eventtype10);
+                $subscribed->setEventtype8($eventtype8);
+                $subscribed->setEventtype9($eventtype9);
+                $subscribed->setEventtype10($eventtype10);
                 $em->persist($subscribed);
                 $copy = $subscribed;
             } else {
-                $sub->setEventtype4($eventtype8);
-                $sub->setEventtype5($eventtype9);
-                $sub->setEventtype6($eventtype10);
+                $sub->setEventtype8($eventtype8);
+                $sub->setEventtype9($eventtype9);
+                $sub->setEventtype10($eventtype10);
                 $em->persist($sub);
                 $copy = $sub;
             }
