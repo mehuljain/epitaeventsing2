@@ -50,8 +50,8 @@ assetic:
 # Doctrine Configuration
 
 services:
-#    fos_user.doctrine_registry:
-#        alias: doctrine
+    fos_user.doctrine_registry:
+        alias: doctrine
         
         
 doctrine:
