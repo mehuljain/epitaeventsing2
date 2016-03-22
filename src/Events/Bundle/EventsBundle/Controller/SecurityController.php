@@ -9,9 +9,9 @@ class SecurityController extends ContainerAware
 {
     public function loginAction(Request $request)
     {
-//        $template = sprintf('EventsEventsBundle:Default:close.html.twig');
-//        $data = array();
-//        return $this->container->get('templating')->renderResponse($template, $data);
+        $template = sprintf('EventsEventsBundle:Default:close.html.twig');
+        $data = array();
+        return $this->container->get('templating')->renderResponse($template, $data);
         /** @var $session \Symfony\Component\HttpFoundation\Session\Session */
         $session = $request->getSession();
 
